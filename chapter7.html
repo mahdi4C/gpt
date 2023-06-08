@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shadows of Deception</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			text-align: center;
+			color: #555;
+		}
+		h2 {
+			color: #555;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		.chapter-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #007bff;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+		.chapter-link:hover {
+			color: #0056b3;
+		}
+		.epilogue {
+			text-align: center;
+			margin-top: 20px;
+			font-style: italic;
+			color: #999;
+		}
+		.chapte-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #e60000;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Shadows of Deception</h1>
+
+		<h2>Chapter 7: Unmasking the Shadows</h2>
+		<p>The stage was set for Gabriel's final act of justice. Armed with undeniable evidence and unwavering determination, he confronted the puppet masters who had manipulated the village.</p>
+		
+		<p>In a dramatic showdown, Gabriel exposed the truth before a stunned audience. The walls of power trembled as the weight of their deceit crumbled under the weight of Gabriel's unwavering resolve.</p>
+		
+		<p>The villagers, once cogs in a corrupted machine, found their voice and rallied behind Gabriel. Together, they formed an unbreakable alliance, ready to face the consequences and rebuild their community.</p>
+		
+		<p>In the court of public opinion, the guilty were held accountable for their actions. The once untouchable were stripped of their power, their masks of authority torn asunder.</p>
+		
+		<p>But justice came at a cost. Gabriel, scarred by the battles fought and the secrets revealed, emerged a changed man. The weight of his burdens threatened to consume him, leaving him to question the price he had paid for the truth.</p>
+		
+		<p>As the village healed, scars etched into its collective memory, Gabriel stood as a symbol of resilience and redemption. The shadows that once plagued the village were banished, replaced by a renewed sense of hope and unity.</p>
+		
+		<p>But Gabriel's journey was far from over. The echoes of his past would forever reverberate, reminding him of the sacrifices made, the lives lost, and the strength found in the face of darkness.</p>
+		
+		<a href="chapter8.html" class="chapter-link">Continue reading</a>
+
+		<a href="chapter6.html" class="chapter-link">Go Back</a>
+		<a href="chapter1.html" class="chapter-link">(1)</a>
+		<a href="chapter2.html" class="chapter-link">(2)</a>
+		<a href="chapter3.html" class="chapter-link">(3)</a>
+		<a href="chapter4.html" class="chapter-link">(4)</a>
+		<a href="chapter5.html" class="chapter-link">(5)</a>
+		<a href="chapter6.html" class="chapter-link">(6)</a>
+		<p class="chapte-link">(7)</p>
+		<a href="chapter8.html" class="chapter-link">(8)</a>
+
+
+		<script>
+			const chapterLinks = document.querySelectorAll('.chapter-link');
+			chapterLinks.forEach((link) => {
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					const nextPage = link.getAttribute('href');
+					const container = document.querySelector('.container');
+					container.style.opacity = 0;
+					setTimeout(() => {
+						window.location.href = nextPage;
+					}, 500);
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>

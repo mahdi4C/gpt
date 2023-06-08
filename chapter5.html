@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shadows of Deception</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			text-align: center;
+			color: #555;
+		}
+		h2 {
+			color: #555;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		.chapter-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #007bff;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+		.chapter-link:hover {
+			color: #0056b3;
+		}
+		.epilogue {
+			text-align: center;
+			margin-top: 20px;
+			font-style: italic;
+			color: #999;
+		}
+		.chapte-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #e60000;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Shadows of Deception</h1>
+
+		<h2>Chapter 5: In the Eye of the Storm</h2>
+		<p>The tension hung thick in the air as Gabriel and his team closed in on their prime suspect. The labyrinthine streets of San Miguel became a battleground, the clashing egos of international detectives vying for control.</p>
+		
+		<p>The hunt reached its crescendo as Gabriel confronted his own brother, the killer he had sworn to protect. Their eyes locked in a bittersweet reunion, a torrent of conflicting emotions threatening to drown them both.</p>
+		
+		<p>The truth spilled forth like blood on the cobblestones. Gabriel's brother, once a beacon of light, had succumbed to the darkness, driven by a twisted sense of justice and vengeance. The Easter eggs and hidden clues had paved the way to this heartbreaking revelation.</p>
+		
+		<p>In a torrent of fury and anguish, Gabriel fought to apprehend his brother, each blow echoing their fractured bond. The village watched in stunned silence as the brothers' fates entwined, their struggles mirroring the unraveling of secrets buried deep within the village's history.</p>
+		
+		<p>The storm raged around them, rain pouring from the heavens, washing away the sins of the past. Lightning illuminated the grim tableau, casting long shadows upon the shattered remnants of their shared childhood.</p>
+		
+		<p>In the final moments, as the thunder roared, Gabriel's brother met his demise, a tragic end to a tale of blood and deception. Gabriel cradled his brother's lifeless body, the weight of their intertwined destinies heavy upon his shoulders.</p>
+		
+		<p>As the rain subsided, the village emerged from its collective sorrow, forever scarred by the haunting specter of their shared tragedy. Gabriel, the lone survivor, gazed upon the wreckage of his shattered world, forever changed.</p>
+		
+		<a href="chapter6.html" class="chapter-link">Continue reading</a>
+
+		<a href="chapter4.html" class="chapter-link">Go Back</a>
+		<a href="chapter1.html" class="chapter-link">(1)</a>
+		<a href="chapter2.html" class="chapter-link">(2)</a>
+		<a href="chapter3.html" class="chapter-link">(3)</a>
+		<a href="chapter4.html" class="chapter-link">(4)</a>
+		<p class="chapte-link">(5)</p>
+		<a href="chapter6.html" class="chapter-link">(6)</a>
+		<a href="chapter7.html" class="chapter-link">(7)</a>
+		<a href="chapter8.html" class="chapter-link">(8)</a>
+
+
+		<script>
+			const chapterLinks = document.querySelectorAll('.chapter-link');
+			chapterLinks.forEach((link) => {
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					const nextPage = link.getAttribute('href');
+					const container = document.querySelector('.container');
+					container.style.opacity = 0;
+					setTimeout(() => {
+						window.location.href = nextPage;
+					}, 500);
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shadows of Deception</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			text-align: center;
+			color: #555;
+		}
+		h2 {
+			color: #555;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		.chapter-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #007bff;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+		.chapter-link:hover {
+			color: #0056b3;
+		}
+		.epilogue {
+			text-align: center;
+			margin-top: 20px;
+			font-style: italic;
+			color: #999;
+		}
+		.chapte-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #e60000;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Shadows of Deception</h1>
+
+		<h2>Chapter 3: Unveiling the Shadows</h2>
+		<p>The winds howled through the narrow streets of San Miguel, carrying with them an eerie silence. Gabriel found himself standing before an old, dilapidated mansion, said to be cursed by generations of villagers.</p>
+		
+		<p>With each step he took, the floorboards groaned in protest. Dust particles danced in the air, illuminated by a sliver of moonlight that seeped through cracked windows. Gabriel's heart pounded in his chest as he delved deeper into the mansion's darkened corridors.</p>
+		
+		<p>Suddenly, a flash of light caught his attention. He followed it, leading him to a hidden chamber. Illuminated by flickering candles, the walls were adorned with symbols and cryptic writings, hinting at a hidden truth.</p>
+		
+		<p>As Gabriel examined the room, he stumbled upon a worn leather journal. Its pages were filled with the ravings of a madman, revealing connections between the village's history and the recent crimes. Could this be the breakthrough he had been searching for?</p>
+		
+		<p>With each page turned, Gabriel's mind spun with newfound revelations. The secrets buried within the village's past slowly unraveled before his eyes, like a tapestry woven by fate.</p>
+		
+		<p>As the first light of dawn broke through the stained glass windows, Gabriel emerged from the mansion, clutching the journal close to his chest. The pieces of the puzzle were falling into place, but time was running out.</p>
+		
+		<p>Meanwhile, outside the mansion, Victoria Blackwood watched from the shadows, her gaze fixated on Gabriel's figure disappearing into the distance. A knowing smile played on her lips as she contemplated the web of deception that had entangled them all.</p>
+		
+		<a href="chapter4.html" class="chapter-link">Continue reading</a>
+
+		<a href="chapter2.html" class="chapter-link">Go Back</a>
+		<a href="chapter1.html" class="chapter-link">(1)</a>
+		<a href="chapter2.html" class="chapter-link">(2)</a>
+		<p class="chapte-link">(3)</p>
+		<a href="chapter4.html" class="chapter-link">(4)</a>
+		<a href="chapter5.html" class="chapter-link">(5)</a>
+		<a href="chapter6.html" class="chapter-link">(6)</a>
+		<a href="chapter7.html" class="chapter-link">(7)</a>
+		<a href="chapter8.html" class="chapter-link">(8)</a>
+
+
+		<script>
+			const chapterLinks = document.querySelectorAll('.chapter-link');
+			chapterLinks.forEach((link) => {
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					const nextPage = link.getAttribute('href');
+					const container = document.querySelector('.container');
+					container.style.opacity = 0;
+					setTimeout(() => {
+						window.location.href = nextPage;
+					}, 500);
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shadows of Deception</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			text-align: center;
+			color: #555;
+		}
+		h2 {
+			color: #555;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		.chapter-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #007bff;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+		.chapter-link:hover {
+			color: #0056b3;
+		}
+		.epilogue {
+			text-align: center;
+			margin-top: 20px;
+			font-style: italic;
+			color: #999;
+		}
+		.chapte-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #e60000;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Shadows of Deception</h1>
+
+		<h2>Chapter 2: Shadows and Secrets</h2>
+		<p>Gabriel met Lucien Dufresne, the enigmatic French government agent, in a secluded corner of a local tavern. The room was filled with a mixture of smoke and hushed conversations, giving an air of secrecy to their meeting.</p>
+		
+		<p>"Gabriel, we must tread carefully," Lucien warned, his eyes scanning the room. "The killer's reach extends beyond what we initially suspected. Victoria Blackwood, the renowned detective, has also taken an interest in these crimes."</p>
+		
+		<p>Gabriel nodded, his gaze unwavering. "I am aware of Victoria's reputation. But I assure you, my commitment to this mission is unwavering."</p>
+		
+		<p>Lucien leaned closer, his voice barely a whisper. "There is more to this assignment than meets the eye, Gabriel. We have a hidden objective, known only to a select few. It involves your own past, a secret you must guard with your life."</p>
+		
+		<p>Gabriel's brow furrowed in confusion, but he remained silent, absorbing the weight of Lucien's words.</p>
+		
+		<p>"Trust no one, Gabriel," Lucien continued. "The line between ally and adversary is thin. Keep your true intentions concealed. And above all, remember our ultimate goal."</p>
+		
+		<p>As Gabriel left the tavern, his mind raced with thoughts of the hidden objective. What secrets were they keeping from him? And how did it connect to the killer he sought?</p>
+		
+		<p>Back at the inn, Gabriel found himself lost in a web of theories and connections. He meticulously laid out photographs and case files, attempting to find the missing puzzle piece that would unravel the truth.</p>
+		
+		<p>As the moon bathed the village in an ethereal glow, Gabriel's mind churned with possibilities. The secrets that lay dormant in the shadows of San Miguel would soon be uncovered.</p>
+		
+		<a href="chapter3.html" class="chapter-link">Continue reading</a>
+
+		<a href="chapter1.html" class="chapter-link">Go Back</a>
+		<a href="chapter1.html" class="chapter-link">(1)</a>
+		<p class="chapte-link">(2)</p>
+		<a href="chapter3.html" class="chapter-link">(3)</a>
+		<a href="chapter4.html" class="chapter-link">(4)</a>
+		<a href="chapter5.html" class="chapter-link">(5)</a>
+		<a href="chapter6.html" class="chapter-link">(6)</a>
+		<a href="chapter7.html" class="chapter-link">(7)</a>
+		<a href="chapter8.html" class="chapter-link">(8)</a>
+
+		<script>
+			const chapterLinks = document.querySelectorAll('.chapter-link');
+			chapterLinks.forEach((link) => {
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					const nextPage = link.getAttribute('href');
+					const container = document.querySelector('.container');
+					container.style.opacity = 0;
+					setTimeout(() => {
+						window.location.href = nextPage;
+					}, 500);
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>

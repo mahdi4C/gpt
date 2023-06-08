@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shadows of Deception</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			text-align: center;
+			color: #555;
+		}
+		h2 {
+			color: #555;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		.chapter-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #007bff;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+		.chapter-link:hover {
+			color: #0056b3;
+		}
+		.epilogue {
+			text-align: center;
+			margin-top: 20px;
+			font-style: italic;
+			color: #999;
+		}
+		.chapte-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #e60000;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Shadows of Deception</h1>
+
+		<h2>Chapter 8: Reflections of Truth</h2><a class="epilogue">(The Finale Chapter)</a>
+		<p>The final chapter unraveled the remaining mysteries that had haunted Gabriel's journey. The truth, like a mosaic of shattered glass, revealed the fragments of a larger picture.</p>
+		
+		<p>With each revelation, Gabriel's understanding deepened, leading him closer to a profound revelation that would redefine his perception of the past. Easter eggs and subtle hints fell into place, offering a new perspective on the enigmatic events.</p>
+		
+		<p>Amidst the remnants of the puzzle, Gabriel discovered the ultimate truth—an intricate web of connections, hidden motives, and unforeseen consequences. The killer's identity, once shrouded in secrecy, was unveiled, revealing a twist that would leave readers stunned.</p>
+		
+		<p>But the story did not end with the unmasking of the killer. Gabriel's journey had always been more than a quest for justice. It was a deeply personal and emotional odyssey, a search for redemption and reconciliation.</p>
+		
+		<p>As the final pieces of the puzzle clicked into place, Gabriel confronted his own demons, coming face-to-face with the haunting truth of his brother's actions. The line between right and wrong blurred as he grappled with conflicting emotions, torn between duty and loyalty.</p>
+		
+		<p>In a poignant moment of reflection, Gabriel made a decision that would resonate through the pages, forever altering the trajectory of his life. The consequences of his choice, a poignant twist, would leave readers contemplating the complexities of morality and the cost of redemption.</p>
+		
+		<p>And as the sun set on the village, casting long shadows across its hallowed streets, Gabriel emerged from the shadows a changed man. The echoes of his journey reverberated, forever etching his name in the annals of the village's history.</p>
+		
+		<p>The story of Shadows of Deception had come to an end, but its impact would linger, forever imprinted on the hearts and minds of readers.</p>
+		
+		<a href="epilogue.html" class="chapter-link">Epilogue: Secrets Buried</a>
+
+		<a href="chapter7.html" class="chapter-link">Go Back</a>
+		<a href="chapter1.html" class="chapter-link">(1)</a>
+		<a href="chapter2.html" class="chapter-link">(2)</a>
+		<a href="chapter3.html" class="chapter-link">(3)</a>
+		<a href="chapter4.html" class="chapter-link">(4)</a>
+		<a href="chapter5.html" class="chapter-link">(5)</a>
+		<a href="chapter6.html" class="chapter-link">(6)</a>
+		<a href="chapter7.html" class="chapter-link">(7)</a>
+		<p class="chapte-link">(8)</p>
+
+
+		<script>
+			const chapterLinks = document.querySelectorAll('.chapter-link');
+			chapterLinks.forEach((link) => {
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					const nextPage = link.getAttribute('href');
+					const container = document.querySelector('.container');
+					container.style.opacity = 0;
+					setTimeout(() => {
+						window.location.href = nextPage;
+					}, 500);
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shadows of Deception</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			text-align: center;
+			color: #555;
+		}
+		h2 {
+			color: #555;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		.chapter-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #007bff;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+		.chapter-link:hover {
+			color: #0056b3;
+		}
+		.epilogue {
+			text-align: center;
+			margin-top: 20px;
+			font-style: italic;
+			color: #999;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Shadows of Deception</h1>
+
+		<h2>Epilogue: Secrets Buried</h2>
+		<p>In the final epilogue, "Secrets Buried," the remnants of Gabriel's journey are laid to rest. It is a chapter of closure, where loose ends are tied and the characters find solace in the aftermath of chaos.</p>
+		
+		<p>The village, once shrouded in darkness, now basks in the warmth of a new dawn. Rebuilding efforts are underway, as scars heal and hope blossoms amidst the charred remains of the past.</p>
+		
+		<p>Gabriel, forever changed by his pursuit of justice, reflects on the lessons learned and the sacrifices made. He contemplates the fragility of truth and the weight of his decisions, finding solace in the knowledge that he fought for what he believed was right.</p>
+		
+		<p>The truth, once buried beneath layers of deception, now lies exposed, casting a haunting shadow over the village's collective memory. It serves as a cautionary tale, a reminder that darkness can thrive even in the most unsuspecting places.</p>
+		
+		<p>As life returns to normal, the characters find their paths diverging. Some seek redemption, dedicating their lives to rebuilding the community they once called home. Others retreat into the solitude of their own reflections, forever marked by the events that unfolded.</p>
+		
+		<p>But amidst the healing and reflection, whispers of a new beginning linger in the air. The village, scarred but resilient, emerges from the shadows with a newfound sense of unity and purpose.</p>
+		
+		<p>And as Gabriel bids farewell to the village that became his crucible, he carries with him the weight of his experiences, forever transformed by the secrets he uncovered and the truth he unearthed.</p>
+		
+		<p>As readers close the final chapter of "Shadows of Deception," they are left with a profound understanding of the human condition—the fragility of trust, the depths of deception, and the enduring power of the human spirit to rise above the shadows.</p>
+		
+		<p class="epilogue">Thank you for joining us on this journey.</p>
+		
+		<a href="THE END.html" class="chapter-link">Last Page</a>
+
+		<a href="chapter8.html" class="chapter-link">Go Back</a>
+
+		<script>
+			const chapterLinks = document.querySelectorAll('.chapter-link');
+			chapterLinks.forEach((link) => {
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					const nextPage = link.getAttribute('href');
+					const container = document.querySelector('.container');
+					container.style.opacity = 0;
+					setTimeout(() => {
+						window.location.href = nextPage;
+					}, 500);
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>

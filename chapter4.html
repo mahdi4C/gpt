@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shadows of Deception</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+		}
+		h1 {
+			text-align: center;
+			color: #555;
+		}
+		h2 {
+			color: #555;
+		}
+		p {
+			margin-bottom: 20px;
+		}
+		.chapter-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #007bff;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+		.chapter-link:hover {
+			color: #0056b3;
+		}
+		.epilogue {
+			text-align: center;
+			margin-top: 20px;
+			font-style: italic;
+			color: #999;
+		}
+		.chapte-link {
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			font-weight: bold;
+			color: #e60000;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Shadows of Deception</h1>
+
+		<h2>Chapter 4: The Hunter's Trail</h2>
+		<p>The sun hung low in the sky as Gabriel meticulously examined the crime scene, the abandoned woods on the outskirts of the village. It was as if nature itself held its breath, the air heavy with anticipation.</p>
+		
+		<p>With gloved hands, he carefully collected the scattered clues left behind—a discarded cigarette butt, a torn piece of fabric, and a chilling message etched into the bark of a tree. Each piece held a story, a trail leading to the elusive killer.</p>
+		
+		<p>Hours turned into days as Gabriel followed the breadcrumbs of evidence, his determination unyielding. He interviewed witnesses, studied the intricate patterns of the killer's actions, and drew connections with his brother's past.</p>
+		
+		<p>As he pieced together the fragments of the puzzle, the truth began to take shape. The Easter eggs and hidden hints woven into the tapestry of the investigation grew more apparent, whispering the unthinkable truth of the killer's identity.</p>
+		
+		<p>With every revelation, Gabriel's heart grew heavier. The lines between duty and loyalty blurred, threatening to consume him. How could he continue the hunt for his own brother?</p>
+		
+		<p>Meanwhile, international detectives from around the world descended upon the village, driven by their own ambitions and egos. Gabriel navigated through the maze of formidable personalities, cautiously guarding his secret goal.</p>
+		
+		<p>Amidst the chaos, the vibrant celebrations of Spain's national day engulfed San Miguel. Colorful banners fluttered in the breeze, traditional music filled the streets, and the villagers reveled in unity.</p>
+		
+		<p>Yet, beneath the festive facade, the shadows of deception loomed. Gabriel knew that the climax of this intricate dance drew near, where the hunter would face the hunted, and the truth would be exposed.</p>
+		
+		<a href="chapter5.html" class="chapter-link">Continue reading</a>
+
+		<a href="chapter3.html" class="chapter-link">Go Back</a>
+		<a href="chapter1.html" class="chapter-link">(1)</a>
+		<a href="chapter2.html" class="chapter-link">(2)</a>
+		<a href="chapter3.html" class="chapter-link">(3)</a>
+		<p class="chapte-link">(4)</p>
+		<a href="chapter5.html" class="chapter-link">(5)</a>
+		<a href="chapter6.html" class="chapter-link">(6)</a>
+		<a href="chapter7.html" class="chapter-link">(7)</a>
+		<a href="chapter8.html" class="chapter-link">(8)</a>
+
+
+		<script>
+			const chapterLinks = document.querySelectorAll('.chapter-link');
+			chapterLinks.forEach((link) => {
+				link.addEventListener('click', (e) => {
+					e.preventDefault();
+					const nextPage = link.getAttribute('href');
+					const container = document.querySelector('.container');
+					container.style.opacity = 0;
+					setTimeout(() => {
+						window.location.href = nextPage;
+					}, 500);
+				});
+			});
+		</script>
+	</div>
+</body>
+</html>
